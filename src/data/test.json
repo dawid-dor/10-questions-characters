@@ -1,0 +1,49 @@
+[
+    {
+        "mal_id": 69420,
+        "name": "Marcel Dor",
+        "image": "https://cdn.myanimelist.net/images/characters/12/338672.jpg",
+        "favorites": 666222,
+        "age": "12",
+        "gender": "Female",
+        "role": "Main",
+        "anime_name": "Non Non Żarowo",
+        "anime_year": "2022",
+        "anime_score": 6.9,
+        "anime_studios": ["bones", "cloverWorks"],
+        "anime_tags": ["dramat", "komedia", "szkola"],
+        "anime_demographic": ["shonen"]
+    },
+
+    {
+        "mal_id": 69421,
+        "name": "Dawid Dor",
+        "image": "https://cdn.myanimelist.net/images/characters/12/338672.jpg",
+        "favorites": 666222,
+        "age": "21",
+        "gender": "Male",
+        "role": "Supporting",
+        "anime_name": "Non Non Żarow0",
+        "anime_year": "2022",
+        "anime_score": 9.9,
+        "anime_studios": ["bones", "cloverWorks"],
+        "anime_tags": ["dramat", "komedia", "szkola"],
+        "anime_demographic": ["shonen"]
+    },
+
+    {
+        "mal_id": 69423,
+        "name": "Marcelek Dor",
+        "image": "https://cdn.myanimelist.net/images/characters/11/402722.jpg",
+        "favorites": 666222,
+        "age": "21",
+        "gender": "Male",
+        "role": "Main",
+        "anime_name": "Non Non Żarow0",
+        "anime_year": "2022",
+        "anime_score": 9.9,
+        "anime_studios": ["bones", "cloverWorks"],
+        "anime_tags": ["dramat", "komedia", "szkola"],
+        "anime_demographic": ["shonen"]
+    }
+]
