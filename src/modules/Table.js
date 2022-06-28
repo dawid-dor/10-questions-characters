@@ -1,7 +1,20 @@
 import React from 'react';
 import Record from './Record';
 
-const Table = ({ characters, characterFilter, maleFilter, femaleFilter, animeFilter }) => {
+const Table = ({
+  characters,
+  characterFilter,
+  maleFilter,
+  femaleFilter,
+  animeFilter,
+  roleFilter,
+  favoritesFilterFrom,
+  favoritesFilterTo,
+  timeFilterFrom,
+  timeFilterTo,
+  scoreFilterFrom,
+  scoreFilterTo,
+}) => {
   const filteredCharacters = characters
     .filter((character) => character.name.toLowerCase().includes(characterFilter))
     .filter((character) => {
@@ -14,7 +27,27 @@ const Table = ({ characters, characterFilter, maleFilter, femaleFilter, animeFil
       }
       if (maleFilter && femaleFilter) return character;
     })
-    .filter((character) => character.anime_name.toLowerCase().includes(animeFilter));
+    .filter((character) => character.anime_name.toLowerCase().includes(animeFilter))
+    .filter((character) => {
+      if (roleFilter.length > 0 && roleFilter !== 'Wszystkie') {
+        return character.role === roleFilter;
+      } else return character;
+    })
+    .filter((character) => {
+      if (character.favorites >= favoritesFilterFrom && character.favorites <= favoritesFilterTo) {
+        return character;
+      }
+    })
+    .filter((character) => {
+      if (+character.anime_year >= timeFilterFrom && +character.anime_year <= timeFilterTo) {
+        return character;
+      }
+    })
+    .filter((character) => {
+      if (character.anime_score >= scoreFilterFrom && character.anime_score <= scoreFilterTo) {
+        return character;
+      }
+    });
   return (
     <table className='table table-striped table-hover table-bordered'>
       <thead>
